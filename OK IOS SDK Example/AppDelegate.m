@@ -20,7 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [OKSDK initWithAppIdAndAppKey:[NSNumber numberWithUnsignedLongLong:163022336] appKey:@"CBAHIILKABABABABA"];
+    [OKSDK initWithAppIdAndAppKey:[NSNumber numberWithUnsignedLongLong:1154828544] appKey:@"CBAKEGNFEBABABABA"];
     return YES;
 }
 
