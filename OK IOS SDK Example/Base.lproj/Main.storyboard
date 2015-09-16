@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XPr-wl-urc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Hello OK IOS SDK-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMg-2J-E2C">
+                                <rect key="frame" x="247" y="335" width="106" height="30"/>
+                                <state key="normal" title="Clear Tokens">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dlP-yx-6dJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAO-Dz-40Y">
+                                <rect key="frame" x="231" y="233" width="139" height="30"/>
+                                <state key="normal" title="OAuth Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zFb-ln-WH3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="LMg-2J-E2C" secondAttribute="centerY" constant="-50" id="CYW-Bt-ABh"/>
+                            <constraint firstAttribute="centerY" secondItem="gAO-Dz-40Y" secondAttribute="centerY" constant="50" id="FNn-b6-Yd5"/>
+                            <constraint firstAttribute="centerX" secondItem="gAO-Dz-40Y" secondAttribute="centerX" id="Qzd-TW-ZOy"/>
+                            <constraint firstAttribute="centerX" secondItem="LMg-2J-E2C" secondAttribute="centerX" id="eDp-fo-3gR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hello OK IOS SDK" id="WE3-1B-UPb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="R1H-HH-bes">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XPr-wl-urc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P9Z-LW-IOo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="qir-Zn-k70">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="grm-wN-GTU"/>
+                        <segue destination="Cyb-Fc-Jq9" kind="show" id="xKV-Ox-g8E"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BR0-fx-gFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="1027"/>
+        </scene>
+        <!--Authorized!!!-->
+        <scene sceneID="XtL-b3-oK1">
+            <objects>
+                <viewController storyboardIdentifier="authorized" id="Cyb-Fc-Jq9" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cK8-hE-nrI"/>
+                        <viewControllerLayoutGuide type="bottom" id="asu-Qa-uBt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gcP-UB-mup">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jr3-1A-Nfv">
+                                <rect key="frame" x="244" y="313" width="112" height="30"/>
+                                <state key="normal" title="Post Mediatopic">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="postMediatopicDidTouch:" destination="Cyb-Fc-Jq9" eventType="touchUpInside" id="KHr-kk-9cp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FP-Ni-t2c">
+                                <rect key="frame" x="254" y="285" width="92" height="30"/>
+                                <state key="normal" title="Invite Friends">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="inviteFriendsDidTouch:" destination="Cyb-Fc-Jq9" eventType="touchUpInside" id="gbJ-x2-tg2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoV-Su-fW0">
+                                <rect key="frame" x="244" y="260" width="112" height="30"/>
+                                <state key="normal" title="Suggest Friends">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="suggestFriendsDidTouch:" destination="Cyb-Fc-Jq9" eventType="touchUpInside" id="Ghi-CO-ApR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9f-m0-bBc">
+                                <rect key="frame" x="268" y="344" width="53" height="30"/>
+                                <state key="normal" title="Sdk Init">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sdkInitDidTouch:" destination="Cyb-Fc-Jq9" eventType="touchUpInside" id="vQE-qQ-DpE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsR-ox-r4p">
+                                <rect key="frame" x="254" y="382" width="98" height="30"/>
+                                <state key="normal" title="Sdk  getNotes">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sdkGetNotesDidTouch:" destination="Cyb-Fc-Jq9" eventType="touchUpInside" id="6zY-1K-3sz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="rsR-ox-r4p" secondAttribute="centerX" id="2YQ-Qz-IcO"/>
+                            <constraint firstAttribute="centerY" secondItem="rsR-ox-r4p" secondAttribute="centerY" constant="-100" id="Btm-q4-eKr"/>
+                            <constraint firstAttribute="centerX" secondItem="GoV-Su-fW0" secondAttribute="centerX" id="I80-8R-khv"/>
+                            <constraint firstAttribute="centerX" secondItem="0FP-Ni-t2c" secondAttribute="centerX" id="Nbr-SC-qDg"/>
+                            <constraint firstAttribute="centerY" secondItem="GoV-Su-fW0" secondAttribute="centerY" constant="25" id="QNC-mv-M4l"/>
+                            <constraint firstAttribute="centerY" secondItem="0FP-Ni-t2c" secondAttribute="centerY" id="Twv-ru-xS9"/>
+                            <constraint firstAttribute="centerX" secondItem="Jr3-1A-Nfv" secondAttribute="centerX" id="Tx9-e0-ICd"/>
+                            <constraint firstAttribute="centerY" secondItem="Jr3-1A-Nfv" secondAttribute="centerY" constant="-25" id="eRs-Z0-fG1"/>
+                            <constraint firstAttribute="centerY" secondItem="r9f-m0-bBc" secondAttribute="centerY" constant="-75" id="k9w-ey-Oe5"/>
+                            <constraint firstAttribute="centerX" secondItem="r9f-m0-bBc" secondAttribute="centerX" id="s4I-R2-r3B"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Authorized!!!" id="YIk-Yy-CED"/>
+                    <connections>
+                        <outlet property="authorizedNavBarTitle" destination="YIk-Yy-CED" id="3oa-36-Byw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8GS-Ll-hyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

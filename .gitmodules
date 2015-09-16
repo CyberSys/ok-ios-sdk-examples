@@ -1,0 +1,4 @@
+[submodule "ok-ios-sdk"]
+	path = ok-ios-sdk
+	url = git://github.com/apiok/ok-ios-sdk.git
+	branch = 2.0
