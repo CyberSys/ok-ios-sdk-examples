@@ -20,7 +20,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [OKSDK initWithAppIdAndAppKey:[NSNumber numberWithUnsignedLongLong:1154828544] appKey:@"CBAKEGNFEBABABABA"];
+    OKSDKInitSettings *settings = [OKSDKInitSettings new];
+    settings.appKey = @"CBAKEGNFEBABABABA";
+    settings.appId = @"1154828544";
+    settings.webViewParent = self.window;
+    settings.webViewControlllerParent = self.window.rootViewController;
+    [OKSDK initWithSettings: settings];
     return YES;
 }
 
