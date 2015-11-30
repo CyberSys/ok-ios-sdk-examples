@@ -24,7 +24,7 @@
     settings.appKey = @"CBAKEGNFEBABABABA";
     settings.appId = @"1154828544";
     settings.webViewParent = self.window;
-    settings.webViewControlllerParent = self.window.rootViewController;
+    settings.webViewControllerParent = self.window.rootViewController;
     [OKSDK initWithSettings: settings];
     return YES;
 }
