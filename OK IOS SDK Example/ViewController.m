@@ -37,7 +37,7 @@ static OKErrorBlock commonError = ^(NSError *error) {
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)loginButtonDidTouch:(id)sender {
-    [OKSDK authorizeWithPermissions:@[@"VALUABLE_ACCESS",@"LONG_ACCESS_TOKEN"] success:^(id data) {
+    [OKSDK authorizeWithPermissions:@[@"VALUABLE_ACCESS",@"LONG_ACCESS_TOKEN",@"PHOTO_CONTENT"] success:^(id data) {
         UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"authorized"];
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.navigationController pushViewController:controller animated:YES];
@@ -119,5 +119,57 @@ static OKErrorBlock commonError = ^(NSError *error) {
         
     } error:commonError];
 }
+
+- (IBAction)uploadPhotoDidTouch:(id)sender {
+    [OKSDK invokeMethod:@"photosV2.getUploadUrl" arguments:@{} success:
+            ^(NSDictionary *data) {
+                NSData *imageData = UIImageJPEGRepresentation([UIImage imageNamed:@"anon.jpg"], 0.9);
+                NSString *uploadUrl = data[@"upload_url"];
+                NSString *photoId = data[@"photo_ids"][0];
+
+                NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+                [request setURL:[NSURL URLWithString:uploadUrl]];
+                [request setHTTPMethod:@"POST"];
+
+                NSString *boundary = @"0xKhTmLbOuNdArY";
+                NSString *kNewLine = @"\r\n";
+
+                NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",boundary];
+                [request setValue:contentType forHTTPHeaderField: @"Content-Type"];
+
+                NSMutableData *body = [NSMutableData data];
+                [body appendData:[[NSString stringWithFormat:@"--%@%@", boundary, kNewLine] dataUsingEncoding:NSUTF8StringEncoding]];
+                [body appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"; filename=\"pic1.jpg\"%@", @"image", kNewLine] dataUsingEncoding:NSUTF8StringEncoding]];
+                [body appendData:[[NSString stringWithFormat:@"Content-Type: image/jpg"] dataUsingEncoding:NSUTF8StringEncoding]];
+                [body appendData:[[NSString stringWithFormat:@"%@%@", kNewLine, kNewLine] dataUsingEncoding:NSUTF8StringEncoding]];
+                [body appendData:imageData];
+                [body appendData:[kNewLine dataUsingEncoding:NSUTF8StringEncoding]];
+
+                [body appendData:[[NSString stringWithFormat:@"--%@--", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+
+                [request setHTTPBody:body];
+
+                NSData *returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+                NSError *jsonParsingError = nil;
+                id result = [NSJSONSerialization JSONObjectWithData:returnData options:0 error:&jsonParsingError];
+                NSString* token = result[@"photos"][photoId][@"token"];
+                [OKSDK invokeMethod:@"photosV2.commit" arguments:@{@"photo_id":photoId,@"token":token,@"comment":@"Example Anon"} success:^(NSDictionary *data) {
+                    NSDictionary *answer = data[@"photos"][0];
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:answer[@"status"]
+                                                                        message:[NSString stringWithFormat:@"new id:%@",answer[@"assigned_photo_id"]]
+                                                                       delegate:nil
+                                                              cancelButtonTitle:@"OK"
+                                                              otherButtonTitles:nil];
+                        [alert show];
+                    });
+
+                } error:commonError];
+                NSLog(@"token: %@ photoId: %@",token,photoId);
+
+            }     error:commonError];
+
+}
+
 
 @end
