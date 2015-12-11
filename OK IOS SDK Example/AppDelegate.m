@@ -23,8 +23,9 @@
     OKSDKInitSettings *settings = [OKSDKInitSettings new];
     settings.appKey = @"CBAKEGNFEBABABABA";
     settings.appId = @"1154828544";
-    settings.webViewParent = self.window;
-    settings.webViewControllerParent = self.window.rootViewController;
+    settings.controllerHandler = ^{
+        return self.window.rootViewController;
+    };
     [OKSDK initWithSettings: settings];
     return YES;
 }
