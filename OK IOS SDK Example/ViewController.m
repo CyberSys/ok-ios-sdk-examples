@@ -29,7 +29,15 @@ static OKErrorBlock commonError = ^(NSError *error) {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+//    [OKSDK getInstallSource:^(id data) {
+//        NSString *message = [NSString stringWithFormat:@"messages: %lu", data[@"source"]];
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"getNotes"
+//                                                        message: message
+//                                                       delegate:nil
+//                                              cancelButtonTitle:@"OK"
+//                                              otherButtonTitles:nil];
+//        [alert show];
+//    } error:commonError];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -67,7 +75,7 @@ static OKErrorBlock commonError = ^(NSError *error) {
     [OKSDK invokeSdkMethod:@"sdk.getNotes" arguments:@{} success:^(id data) {
           dispatch_async(dispatch_get_main_queue(), ^{
         NSArray *messages = data[@"notes"];
-        NSString *message = [NSString stringWithFormat:@"messages: %lu",[messages count]];
+        NSString *message = [NSString stringWithFormat:@"messages: %lu",(unsigned long)[messages count]];
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"getNotes"
                                                         message: message
                                                        delegate:nil
@@ -119,6 +127,7 @@ static OKErrorBlock commonError = ^(NSError *error) {
         
     } error:commonError];
 }
+
 
 - (IBAction)uploadPhotoDidTouch:(id)sender {
     [OKSDK invokeMethod:@"photosV2.getUploadUrl" arguments:@{} success:

@@ -7,59 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A0B8A2D1B8B5FA60064BABB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B8A2C1B8B5FA60064BABB /* main.m */; };
-		0A0B8A301B8B5FA60064BABB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B8A2F1B8B5FA60064BABB /* AppDelegate.m */; };
-		0A0B8A331B8B5FA60064BABB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B8A321B8B5FA60064BABB /* ViewController.m */; };
-		0A0B8A361B8B5FA60064BABB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0B8A341B8B5FA60064BABB /* Main.storyboard */; };
-		0A0B8A381B8B5FA60064BABB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A0B8A371B8B5FA60064BABB /* Images.xcassets */; };
-		0A0B8A3B1B8B5FA60064BABB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0B8A391B8B5FA60064BABB /* LaunchScreen.xib */; };
-		0A0B8A471B8B5FA60064BABB /* OK_IOS_SDK_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B8A461B8B5FA60064BABB /* OK_IOS_SDK_ExampleTests.m */; };
-		B0D61309435E5E2A0E8A353D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B0D6187442C3FE77574C9B1D /* LICENSE */; };
-		B0D616CED5029EA8AFFE26C1 /* OKSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D61A82EF971D13A3B18408 /* OKSDK.m */; };
-		B0D619B6185B8C9036E5FCF0 /* anon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0D615D6D1ED4A5685E144F7 /* anon.jpg */; };
-		B0D61D1DD54606266121C803 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B0D61FAB8D173488A2DA5DA9 /* .gitignore */; };
-		B0D61F66AC1D245E974271B5 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B0D61FA4D814E45C621186AC /* README.md */; };
+		0A83DF911C982F610050E4E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A83DF901C982F610050E4E8 /* main.m */; };
+		0A83DF941C982F610050E4E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A83DF931C982F610050E4E8 /* AppDelegate.m */; };
+		0A83DF971C982F610050E4E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A83DF961C982F610050E4E8 /* ViewController.m */; };
+		0A83DF9A1C982F610050E4E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A83DF981C982F610050E4E8 /* Main.storyboard */; };
+		0A83DF9C1C982F610050E4E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A83DF9B1C982F610050E4E8 /* Assets.xcassets */; };
+		0A83DFA61C9832B30050E4E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A83DFA41C9832B30050E4E8 /* LaunchScreen.xib */; };
+		0A83DFA91C9832E00050E4E8 /* OKSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A83DFA81C9832E00050E4E8 /* OKSDK.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		0A0B8A411B8B5FA60064BABB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A0B8A1F1B8B5FA60064BABB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0A0B8A261B8B5FA60064BABB;
-			remoteInfo = "OK IOS SDK Example";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		0A0B8A2B1B8B5FA60064BABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A0B8A2C1B8B5FA60064BABB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0A0B8A2E1B8B5FA60064BABB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0A0B8A2F1B8B5FA60064BABB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0A0B8A311B8B5FA60064BABB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0A0B8A321B8B5FA60064BABB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0A0B8A351B8B5FA60064BABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0A0B8A371B8B5FA60064BABB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		0A0B8A3A1B8B5FA60064BABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0A0B8A451B8B5FA60064BABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A0B8A461B8B5FA60064BABB /* OK_IOS_SDK_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OK_IOS_SDK_ExampleTests.m; sourceTree = "<group>"; };
-		B0D615D6D1ED4A5685E144F7 /* anon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = anon.jpg; sourceTree = "<group>"; };
-		B0D6187442C3FE77574C9B1D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		B0D61A82EF971D13A3B18408 /* OKSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKSDK.m; sourceTree = "<group>"; };
-		B0D61FA4D814E45C621186AC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B0D61FAB8D173488A2DA5DA9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
-		B0D61FEE856FD83E94D9FBA0 /* OKSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKSDK.h; sourceTree = "<group>"; };
+		0A83DF8D1C982F610050E4E8 /* OK IOS SDK Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OK IOS SDK Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A83DF901C982F610050E4E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A83DF921C982F610050E4E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0A83DF931C982F610050E4E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0A83DF951C982F610050E4E8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0A83DF961C982F610050E4E8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0A83DF991C982F610050E4E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A83DF9B1C982F610050E4E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A83DFA01C982F610050E4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A83DFA51C9832B30050E4E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0A83DFA71C9832E00050E4E8 /* OKSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKSDK.h; sourceTree = "<group>"; };
+		0A83DFA81C9832E00050E4E8 /* OKSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKSDK.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0A0B8A241B8B5FA60064BABB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A0B8A3D1B8B5FA60064BABB /* Frameworks */ = {
+		0A83DF8A1C982F610050E4E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,8 +47,8 @@
 		0A0B8A1E1B8B5FA60064BABB = {
 			isa = PBXGroup;
 			children = (
-				0A0B8A291B8B5FA60064BABB /* OK IOS SDK Example */,
 				0A0B8A431B8B5FA60064BABB /* OK IOS SDK ExampleTests */,
+				0A83DF8E1C982F610050E4E8 /* OK IOS SDK Example */,
 				0A0B8A281B8B5FA60064BABB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,34 +56,9 @@
 		0A0B8A281B8B5FA60064BABB /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				0A83DF8D1C982F610050E4E8 /* OK IOS SDK Example.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		0A0B8A291B8B5FA60064BABB /* OK IOS SDK Example */ = {
-			isa = PBXGroup;
-			children = (
-				0A0B8A2E1B8B5FA60064BABB /* AppDelegate.h */,
-				0A0B8A2F1B8B5FA60064BABB /* AppDelegate.m */,
-				0A0B8A311B8B5FA60064BABB /* ViewController.h */,
-				0A0B8A321B8B5FA60064BABB /* ViewController.m */,
-				0A0B8A341B8B5FA60064BABB /* Main.storyboard */,
-				0A0B8A371B8B5FA60064BABB /* Images.xcassets */,
-				0A0B8A391B8B5FA60064BABB /* LaunchScreen.xib */,
-				0A0B8A2A1B8B5FA60064BABB /* Supporting Files */,
-				B0D616699291E6C232699E05 /* ok-ios-sdk */,
-				B0D615D6D1ED4A5685E144F7 /* anon.jpg */,
-			);
-			path = "OK IOS SDK Example";
-			sourceTree = "<group>";
-		};
-		0A0B8A2A1B8B5FA60064BABB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0A0B8A2B1B8B5FA60064BABB /* Info.plist */,
-				0A0B8A2C1B8B5FA60064BABB /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		0A0B8A431B8B5FA60064BABB /* OK IOS SDK ExampleTests */ = {
@@ -128,28 +78,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B0D616699291E6C232699E05 /* ok-ios-sdk */ = {
+		0A83DF8E1C982F610050E4E8 /* OK IOS SDK Example */ = {
 			isa = PBXGroup;
 			children = (
-				B0D6187442C3FE77574C9B1D /* LICENSE */,
-				B0D61FEE856FD83E94D9FBA0 /* OKSDK.h */,
-				B0D61A82EF971D13A3B18408 /* OKSDK.m */,
-				B0D61FA4D814E45C621186AC /* README.md */,
-				B0D61FAB8D173488A2DA5DA9 /* .gitignore */,
+				0A83DFA71C9832E00050E4E8 /* OKSDK.h */,
+				0A83DFA81C9832E00050E4E8 /* OKSDK.m */,
+				0A83DFA41C9832B30050E4E8 /* LaunchScreen.xib */,
+				0A83DF921C982F610050E4E8 /* AppDelegate.h */,
+				0A83DF931C982F610050E4E8 /* AppDelegate.m */,
+				0A83DF951C982F610050E4E8 /* ViewController.h */,
+				0A83DF961C982F610050E4E8 /* ViewController.m */,
+				0A83DF981C982F610050E4E8 /* Main.storyboard */,
+				0A83DF9B1C982F610050E4E8 /* Assets.xcassets */,
+				0A83DFA01C982F610050E4E8 /* Info.plist */,
+				0A83DF8F1C982F610050E4E8 /* Supporting Files */,
 			);
-			path = "ok-ios-sdk";
-			sourceTree = SOURCE_ROOT;
+			path = "OK IOS SDK Example";
+			sourceTree = "<group>";
+		};
+		0A83DF8F1C982F610050E4E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A83DF901C982F610050E4E8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0A0B8A261B8B5FA60064BABB /* OK IOS SDK Example */ = {
+		0A83DF8C1C982F610050E4E8 /* OK IOS SDK Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A0B8A4A1B8B5FA60064BABB /* Build configuration list for PBXNativeTarget "OK IOS SDK Example" */;
+			buildConfigurationList = 0A83DFA11C982F610050E4E8 /* Build configuration list for PBXNativeTarget "OK IOS SDK Example" */;
 			buildPhases = (
-				0A0B8A231B8B5FA60064BABB /* Sources */,
-				0A0B8A241B8B5FA60064BABB /* Frameworks */,
-				0A0B8A251B8B5FA60064BABB /* Resources */,
+				0A83DF891C982F610050E4E8 /* Sources */,
+				0A83DF8A1C982F610050E4E8 /* Frameworks */,
+				0A83DF8B1C982F610050E4E8 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -157,24 +121,8 @@
 			);
 			name = "OK IOS SDK Example";
 			productName = "OK IOS SDK Example";
+			productReference = 0A83DF8D1C982F610050E4E8 /* OK IOS SDK Example.app */;
 			productType = "com.apple.product-type.application";
-		};
-		0A0B8A3F1B8B5FA60064BABB /* OK IOS SDK ExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0A0B8A4D1B8B5FA60064BABB /* Build configuration list for PBXNativeTarget "OK IOS SDK ExampleTests" */;
-			buildPhases = (
-				0A0B8A3C1B8B5FA60064BABB /* Sources */,
-				0A0B8A3D1B8B5FA60064BABB /* Frameworks */,
-				0A0B8A3E1B8B5FA60064BABB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0A0B8A421B8B5FA60064BABB /* PBXTargetDependency */,
-			);
-			name = "OK IOS SDK ExampleTests";
-			productName = "OK IOS SDK ExampleTests";
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -182,15 +130,11 @@
 		0A0B8A1F1B8B5FA60064BABB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = ok.ru;
 				TargetAttributes = {
-					0A0B8A261B8B5FA60064BABB = {
-						CreatedOnToolsVersion = 6.4;
-					};
-					0A0B8A3F1B8B5FA60064BABB = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 0A0B8A261B8B5FA60064BABB;
+					0A83DF8C1C982F610050E4E8 = {
+						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
 			};
@@ -207,79 +151,51 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A0B8A261B8B5FA60064BABB /* OK IOS SDK Example */,
-				0A0B8A3F1B8B5FA60064BABB /* OK IOS SDK ExampleTests */,
+				0A83DF8C1C982F610050E4E8 /* OK IOS SDK Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0A0B8A251B8B5FA60064BABB /* Resources */ = {
+		0A83DF8B1C982F610050E4E8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A0B8A361B8B5FA60064BABB /* Main.storyboard in Resources */,
-				0A0B8A3B1B8B5FA60064BABB /* LaunchScreen.xib in Resources */,
-				0A0B8A381B8B5FA60064BABB /* Images.xcassets in Resources */,
-				B0D61309435E5E2A0E8A353D /* LICENSE in Resources */,
-				B0D61D1DD54606266121C803 /* .gitignore in Resources */,
-				B0D619B6185B8C9036E5FCF0 /* anon.jpg in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A0B8A3E1B8B5FA60064BABB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0A83DF9C1C982F610050E4E8 /* Assets.xcassets in Resources */,
+				0A83DFA61C9832B30050E4E8 /* LaunchScreen.xib in Resources */,
+				0A83DF9A1C982F610050E4E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0A0B8A231B8B5FA60064BABB /* Sources */ = {
+		0A83DF891C982F610050E4E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A0B8A331B8B5FA60064BABB /* ViewController.m in Sources */,
-				0A0B8A301B8B5FA60064BABB /* AppDelegate.m in Sources */,
-				0A0B8A2D1B8B5FA60064BABB /* main.m in Sources */,
-				B0D616CED5029EA8AFFE26C1 /* OKSDK.m in Sources */,
-				B0D61F66AC1D245E974271B5 /* README.md in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A0B8A3C1B8B5FA60064BABB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A0B8A471B8B5FA60064BABB /* OK_IOS_SDK_ExampleTests.m in Sources */,
+				0A83DF971C982F610050E4E8 /* ViewController.m in Sources */,
+				0A83DF941C982F610050E4E8 /* AppDelegate.m in Sources */,
+				0A83DFA91C9832E00050E4E8 /* OKSDK.m in Sources */,
+				0A83DF911C982F610050E4E8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		0A0B8A421B8B5FA60064BABB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0A0B8A261B8B5FA60064BABB /* OK IOS SDK Example */;
-			targetProxy = 0A0B8A411B8B5FA60064BABB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		0A0B8A341B8B5FA60064BABB /* Main.storyboard */ = {
+		0A83DF981C982F610050E4E8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0A0B8A351B8B5FA60064BABB /* Base */,
+				0A83DF991C982F610050E4E8 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		0A0B8A391B8B5FA60064BABB /* LaunchScreen.xib */ = {
+		0A83DFA41C9832B30050E4E8 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0A0B8A3A1B8B5FA60064BABB /* Base */,
+				0A83DFA51C9832B30050E4E8 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -308,6 +224,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -369,59 +286,30 @@
 			};
 			name = Release;
 		};
-		0A0B8A4B1B8B5FA60064BABB /* Debug */ = {
+		0A83DFA21C982F610050E4E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				INFOPLIST_FILE = "OK IOS SDK Example/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.ok.OK-IOS-SDK-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		0A0B8A4C1B8B5FA60064BABB /* Release */ = {
+		0A83DFA31C982F610050E4E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "OK IOS SDK Example/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.ok.OK-IOS-SDK-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		0A0B8A4E1B8B5FA60064BABB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "OK IOS SDK ExampleTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OK IOS SDK Example.app/OK IOS SDK Example";
-			};
-			name = Debug;
-		};
-		0A0B8A4F1B8B5FA60064BABB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "OK IOS SDK ExampleTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OK IOS SDK Example.app/OK IOS SDK Example";
 			};
 			name = Release;
 		};
@@ -437,23 +325,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A0B8A4A1B8B5FA60064BABB /* Build configuration list for PBXNativeTarget "OK IOS SDK Example" */ = {
+		0A83DFA11C982F610050E4E8 /* Build configuration list for PBXNativeTarget "OK IOS SDK Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A0B8A4B1B8B5FA60064BABB /* Debug */,
-				0A0B8A4C1B8B5FA60064BABB /* Release */,
+				0A83DFA21C982F610050E4E8 /* Debug */,
+				0A83DFA31C982F610050E4E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0A0B8A4D1B8B5FA60064BABB /* Build configuration list for PBXNativeTarget "OK IOS SDK ExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0A0B8A4E1B8B5FA60064BABB /* Debug */,
-				0A0B8A4F1B8B5FA60064BABB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

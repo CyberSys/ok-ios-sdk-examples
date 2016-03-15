@@ -2,8 +2,8 @@
 //  main.m
 //  OK IOS SDK Example
 //
-//  Created by Dmitry on 8/24/15.
-//  Copyright (c) 2015 ok.ru. All rights reserved.
+//  Created by Dmitry on 3/15/16.
+//  Copyright © 2016 ok.ru. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
