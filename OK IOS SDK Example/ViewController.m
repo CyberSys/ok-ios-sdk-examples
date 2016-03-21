@@ -29,15 +29,17 @@ static OKErrorBlock commonError = ^(NSError *error) {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [OKSDK getInstallSource:^(id data) {
-//        NSString *message = [NSString stringWithFormat:@"messages: %lu", data[@"source"]];
-//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"getNotes"
-//                                                        message: message
-//                                                       delegate:nil
-//                                              cancelButtonTitle:@"OK"
-//                                              otherButtonTitles:nil];
-//        [alert show];
-//    } error:commonError];
+    [OKSDK getInstallSource:^(id data) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSString *message = [NSString stringWithFormat:@"install source: %d", [data intValue]];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"getInstallSource"
+                                                            message:message
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+        });
+    } error:commonError];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -13,7 +13,11 @@
 		0A83DF9A1C982F610050E4E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A83DF981C982F610050E4E8 /* Main.storyboard */; };
 		0A83DF9C1C982F610050E4E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A83DF9B1C982F610050E4E8 /* Assets.xcassets */; };
 		0A83DFA61C9832B30050E4E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A83DFA41C9832B30050E4E8 /* LaunchScreen.xib */; };
-		0A83DFA91C9832E00050E4E8 /* OKSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A83DFA81C9832E00050E4E8 /* OKSDK.m */; };
+		B0D616B2B1EC5160C9B70D41 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B0D61A17101512711BFFE161 /* .gitignore */; };
+		B0D6184F72E26A251C9A12FD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B0D61AFCBF299D400EC2D179 /* LICENSE */; };
+		B0D6196C449CEEBD845B5689 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B0D6125E9D7271F3CD816FB9 /* README.md */; };
+		B0D61987E41784A3EE28F39C /* OKSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D615E561381402CA00B5B7 /* OKSDK.m */; };
+		B0D61FA9F59856D316F7D923 /* ok-ios-sdk.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B0D6111F0E6773D5F1070A15 /* ok-ios-sdk.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +33,12 @@
 		0A83DF9B1C982F610050E4E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A83DFA01C982F610050E4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A83DFA51C9832B30050E4E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		0A83DFA71C9832E00050E4E8 /* OKSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKSDK.h; sourceTree = "<group>"; };
-		0A83DFA81C9832E00050E4E8 /* OKSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKSDK.m; sourceTree = "<group>"; };
+		B0D610B11E1FDB5999FC639A /* OKSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKSDK.h; sourceTree = "<group>"; };
+		B0D6111F0E6773D5F1070A15 /* ok-ios-sdk.podspec */ = {isa = PBXFileReference; lastKnownFileType = file.podspec; path = "ok-ios-sdk.podspec"; sourceTree = "<group>"; };
+		B0D6125E9D7271F3CD816FB9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B0D615E561381402CA00B5B7 /* OKSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKSDK.m; sourceTree = "<group>"; };
+		B0D61A17101512711BFFE161 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
+		B0D61AFCBF299D400EC2D179 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +58,7 @@
 				0A0B8A431B8B5FA60064BABB /* OK IOS SDK ExampleTests */,
 				0A83DF8E1C982F610050E4E8 /* OK IOS SDK Example */,
 				0A0B8A281B8B5FA60064BABB /* Products */,
+				B0D6144D88F3968DC73BD6D3 /* ok-ios-sdk */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,8 +90,6 @@
 		0A83DF8E1C982F610050E4E8 /* OK IOS SDK Example */ = {
 			isa = PBXGroup;
 			children = (
-				0A83DFA71C9832E00050E4E8 /* OKSDK.h */,
-				0A83DFA81C9832E00050E4E8 /* OKSDK.m */,
 				0A83DFA41C9832B30050E4E8 /* LaunchScreen.xib */,
 				0A83DF921C982F610050E4E8 /* AppDelegate.h */,
 				0A83DF931C982F610050E4E8 /* AppDelegate.m */,
@@ -102,6 +109,19 @@
 				0A83DF901C982F610050E4E8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0D6144D88F3968DC73BD6D3 /* ok-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				B0D61AFCBF299D400EC2D179 /* LICENSE */,
+				B0D610B11E1FDB5999FC639A /* OKSDK.h */,
+				B0D615E561381402CA00B5B7 /* OKSDK.m */,
+				B0D6125E9D7271F3CD816FB9 /* README.md */,
+				B0D61A17101512711BFFE161 /* .gitignore */,
+				B0D6111F0E6773D5F1070A15 /* ok-ios-sdk.podspec */,
+			);
+			path = "ok-ios-sdk";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +184,9 @@
 				0A83DF9C1C982F610050E4E8 /* Assets.xcassets in Resources */,
 				0A83DFA61C9832B30050E4E8 /* LaunchScreen.xib in Resources */,
 				0A83DF9A1C982F610050E4E8 /* Main.storyboard in Resources */,
+				B0D6184F72E26A251C9A12FD /* LICENSE in Resources */,
+				B0D616B2B1EC5160C9B70D41 /* .gitignore in Resources */,
+				B0D61FA9F59856D316F7D923 /* ok-ios-sdk.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,8 +199,9 @@
 			files = (
 				0A83DF971C982F610050E4E8 /* ViewController.m in Sources */,
 				0A83DF941C982F610050E4E8 /* AppDelegate.m in Sources */,
-				0A83DFA91C9832E00050E4E8 /* OKSDK.m in Sources */,
 				0A83DF911C982F610050E4E8 /* main.m in Sources */,
+				B0D61987E41784A3EE28F39C /* OKSDK.m in Sources */,
+				B0D6196C449CEEBD845B5689 /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
